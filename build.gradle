@@ -7,7 +7,7 @@ plugins {
 group = root_package
 
 base {
-    archivesName = mod_id
+    archivesName = mod_name
 }
 
 def accessTransformerNames = access_transformers.tokenize()
