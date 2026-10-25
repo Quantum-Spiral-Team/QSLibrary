@@ -119,6 +119,7 @@ jmh {
 
 tasks.jar {
     manifest {
+        attributes(mapOf("Implementation-Vendor" to prop("mod_authors").split(",").first()))
         if (accessTransformerNames.isNotEmpty()) {
             attributes(mapOf("FMLAT" to accessTransformerNames.joinToString(" ")))
         }
